@@ -2,11 +2,6 @@ provider "google" {
   project     = local.project
 }
 
-variable "name" {
-  description = "Name of the instance"
-  type        = string
-}
-
 resource "google_compute_instance" "default" {
   name         = var.name
   machine_type = "e2-small"
