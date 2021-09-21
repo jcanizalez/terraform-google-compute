@@ -17,7 +17,3 @@ resource "google_compute_instance" "default" {
     network = "default"
   }
 }
-
-output "id" {
-   value = google_compute_instance.default.id
-}
